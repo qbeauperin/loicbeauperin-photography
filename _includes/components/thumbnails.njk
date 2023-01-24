@@ -1,9 +1,9 @@
 <section id="thumbnails">
-    {% for post in collections.post %}
+    {% for post in collections.posts %}
         <article>
             <a class="thumbnail" href="{{ post.data.image }}" data-position="{{ post.data.image_position }}"><img src="{{ post.data.image }}" alt="{{ post.data.title }}" /></a>
             <h2>{{ post.data.title }}</h2>
-            <p>{{ post.data.content }}</p>
+            <p>{{ post.templateContent | safe }}</p>
         </article>
     {% endfor %}
 </section>

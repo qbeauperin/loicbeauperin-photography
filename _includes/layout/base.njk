@@ -4,8 +4,10 @@
 		<title>{{ settings.site_name }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        {% set css %}{% include "assets/css/main.css" %}{% endset %}
+        <style>{{ css | cssmin | safe }}</style>
+        {% set noscript_css %}{% include "assets/css/noscript.css" %}{% endset %}
+        <noscript><style>{{ noscript_css | cssmin | safe }}</style></noscript>
 	</head>
 	<body class="is-preload-0 is-preload-1 is-preload-2">
 
@@ -38,10 +40,10 @@
 			</div>
 
 		<!-- Scripts -->
-        {# <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/browser.min.js"></script>
         <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/main.js"></script> #}
+        <script src="assets/js/main.js"></script>
 
 	</body>
 </html>

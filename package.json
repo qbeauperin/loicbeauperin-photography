@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/qbeauperin/loicbeauperin-photography#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "clean-css": "^5.3.2"
   }
 }
