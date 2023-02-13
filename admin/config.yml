@@ -1,0 +1,62 @@
+backend:
+  # Use netlify identity as backend
+  name: git-gateway
+  branch: main
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+# Please run "npx @staticcms/proxy-server" for local backend
+local_backend: true
+
+collections:
+  - label: "Photos"
+    label_singular: "Photo"
+    name: "posts"
+    folder: "posts"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Photo"
+        name: "image"
+        widget: "image"
+        media_library:
+          config:
+            max_file_size: 2048000
+      - { label: "Description", name: "body", widget: "markdown" }
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Global"
+        name: "global"
+        file: "_data/settings.json"
+        fields:
+          - { label: "Nom du site", name: "site_name", widget: "string" }
+          - { label: "Description du site", name: "site_description", widget: "string" }
+          - label: "Liens"
+            label_singular: "Lien"
+            name: "links"
+            widget: "list"
+            # collapsed: false
+            summary: "{{fields.label}}"
+            fields: 
+              - label: "Icone"
+                name: "icon"
+                widget: "select"
+                options:
+                  - label: "Twitter"
+                    value: "twitter"
+                  - label: "Instagram"
+                    value: "instagram"
+                  - label: "Email"
+                    value: "envelope"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Url", name: "url", widget: "string" }
+          - label: "Copyright"
+            name: "copyright"
+            widget: "list"
+            fields:
+              - { label: "Element", name: "entry", widget: "string" }

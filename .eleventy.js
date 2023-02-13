@@ -21,9 +21,8 @@ async function thumbnailShortcode(src, alt, position) {
 }
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("assets/css/");
-    eleventyConfig.addPassthroughCopy("assets/js/");
-    eleventyConfig.addPassthroughCopy("assets/svg/");
+    eleventyConfig.addPassthroughCopy("assets/");
+    eleventyConfig.addPassthroughCopy("admin/config.yml");
 
     eleventyConfig.addFilter("cssmin", function (code) {
         return new CleanCSS({}).minify(code).styles;
@@ -34,4 +33,6 @@ module.exports = function (eleventyConfig) {
     });
 
     eleventyConfig.addAsyncShortcode("thumbnail", thumbnailShortcode);
+
+    eleventyConfig.addWatchTarget("./admin/");
 };

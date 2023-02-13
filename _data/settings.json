@@ -1,20 +1,20 @@
 {
-    "site_name": "Loïc Beauperin Photography",
-    "site_description": "This is Loic's photography website, welcome!",
-    "links": [
-        {
-            "label": "Instagram",
-            "url": "https://www.instagram.com/loicbeauperin/",
-            "icon": "instagram"
-        },
-        {
-            "label": "Email",
-            "url": "mailto:loicbeauperinphotography@gmail.com",
-            "icon": "envelope"
-        }
-    ],
-    "copyright": [
-        "&copy; Loïc Beauperin.",
-        "Design based on <a href=\"https://html5up.net\">HTML5 UP</a>."
-    ] 
+  "site_name": "Loïc Beauperin Photography",
+  "site_description": "This is Loic's photography website, welcome!",
+  "links": [
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/loicbeauperin/dsdsds",
+      "icon": "instagram"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:loicbeauperinphotography@gmail.com",
+      "icon": "envelope"
+    }
+  ],
+  "copyright": [
+    "&copy; Loïc Beauperin.",
+    "Design based on <a href=\"https://html5up.net\">HTML5 UP</a>."
+  ]
 }
