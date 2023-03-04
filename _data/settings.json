@@ -1,16 +1,17 @@
 {
-  "site_name": "Loïc BEAUPERIN - Photographie d'art",
-  "site_description": "Bienvenue ! Pour toute demande de tirages : loicbeauperinphoto@gmail.com. Nous verrons les détails ensemble ! (la qualité des photos est ici diminuée pour faciliter l'affichage en ligne)",
+  "site_name": "Loïc BEAUPERIN",
+  "site_tagline": "Photographie d'art",
+  "site_description": "Bienvenue ! Contactez-moi pour toute demande de tirages, nous verrons les détails ensemble.",
   "links": [
     {
       "label": "Instagram",
       "url": "https://www.instagram.com/loicbeauperin/dsdsds",
-      "icon": "instagram"
+      "icon": "brands fa-instagram"
     },
     {
       "label": "Email",
       "url": "mailto:loicbeauperinphotography@gmail.com",
-      "icon": "envelope"
+      "icon": "fa-envelope"
     }
   ],
   "copyright": [

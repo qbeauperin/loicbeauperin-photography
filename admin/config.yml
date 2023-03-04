@@ -23,8 +23,34 @@ collections:
         widget: "image"
         media_library:
           config:
-            max_file_size: 2048000
+            max_file_size: 10000000
       - { label: "Description", name: "body", widget: "markdown" }
+      - label: "Focal point"
+        name: "image_position"
+        widget: "object"
+        fields:
+          - label: "Horizontal"
+            name: "horizontal"
+            widget: "select"
+            default: "center"
+            options:
+              - label: "Gauche"
+                value: "left"
+              - label: "Centré"
+                value: "center"
+              - label: "Droite"
+                value: "right"
+          - label: "Vertical"
+            name: "vertical"
+            widget: "select"
+            default: "center"
+            options:
+              - label: "Haut"
+                value: "top"
+              - label: "Centré"
+                value: "center"
+              - label: "Bas"
+                value: "bottom"
   - label: "Settings"
     name: "settings"
     editor:
@@ -35,6 +61,7 @@ collections:
         file: "_data/settings.json"
         fields:
           - { label: "Nom du site", name: "site_name", widget: "string" }
+          - { label: "Tagline", name: "site_tagline", widget: "string" }
           - { label: "Description du site", name: "site_description", widget: "string" }
           - label: "Liens"
             label_singular: "Lien"
@@ -48,11 +75,11 @@ collections:
                 widget: "select"
                 options:
                   - label: "Twitter"
-                    value: "twitter"
+                    value: "brands fa-twitter"
                   - label: "Instagram"
-                    value: "instagram"
+                    value: "brands fa-instagram"
                   - label: "Email"
-                    value: "envelope"
+                    value: "fa-envelope"
               - { label: "Label", name: "label", widget: "string" }
               - { label: "Url", name: "url", widget: "string" }
           - label: "Copyright"

@@ -17,7 +17,7 @@ async function thumbnailShortcode(src, alt, position) {
     });
 
     let images = metadata.webp;
-    return `<a class="thumbnail" href="${images[1].url}" data-position="${position}"><img src="${images[0].url}" alt="${alt}" /></a>`;
+    return `<a class="thumbnail" href="${images[1].url}" data-position="${position}" style="background-image: url(${images[0].url}); background-position: ${position.horizontal} ${position.vertical}"></a>`;
 }
 
 module.exports = function (eleventyConfig) {
