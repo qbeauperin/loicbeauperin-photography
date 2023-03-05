@@ -5,6 +5,4 @@ image_position:
   horizontal: center
   vertical: center
 ---
-
-
-
+.
