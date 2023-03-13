@@ -5,4 +5,4 @@ image_position:
   horizontal: center
   vertical: center
 ---
-Searching lines in Switzerland.
+Swiss lines
