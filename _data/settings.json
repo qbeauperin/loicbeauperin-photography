@@ -1,21 +1,21 @@
 {
   "site_name": "Loïc BEAUPERIN",
   "site_tagline": "- photographie d'art -",
-  "site_description": "Bienvenue ! Un cliché vous plaît ? Contactez-moi juste ici et voyons les détails ensemble !",
+  "site_description": "Bienvenue ! Un cliché vous plaît ? Contactez-moi ci-dessous et voyons les détails ensemble !",
   "links": [
     {
       "label": "Instagram",
-      "url": "https://www.instagram.com/loicbeauperin/dsdsds",
+      "url": "https://www.instagram.com/loicbeauperin",
       "icon": "brands fa-instagram"
     },
     {
       "label": "Email",
-      "url": "mailto:loicbeauperinphotography@gmail.com",
+      "url": "mailto:loicbeauperinphoto@gmail.com",
       "icon": "fa-envelope"
     }
   ],
   "copyright": [
-    "&copy; Loïc Beauperin.",
+    "&copy; Loïc BEAUPERIN",
     "Design based on <a href=\"https://html5up.net\">HTML5 UP</a>."
   ]
 }
