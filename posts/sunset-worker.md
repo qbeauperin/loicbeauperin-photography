@@ -5,4 +5,4 @@ image_position:
   horizontal: center
   vertical: top
 ---
-L'homme de l'ombre
+Prints / Tirages : loicbeauperinphoto@gmail.com
