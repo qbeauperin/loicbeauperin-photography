@@ -5,4 +5,4 @@ image_position:
   horizontal: center
   vertical: center
 ---
-Swiss lines
+Prints / Tirages : loicbeauperinphoto@gmail.com
