@@ -5,4 +5,4 @@ image_position:
   horizontal: center
   vertical: center
 ---
-Lines and light.
+Prints / Tirages : loicbeauperinphoto@gmail.com
