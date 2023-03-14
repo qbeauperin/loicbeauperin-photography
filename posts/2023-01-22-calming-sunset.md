@@ -5,4 +5,4 @@ image_position:
   horizontal: left
   vertical: bottom
 ---
-Colors !
+Prints / Tirages : loicbeauperinphoto@gmail.com
