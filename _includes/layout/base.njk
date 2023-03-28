@@ -11,6 +11,9 @@
         <style>{{ css | cssmin | safe }}</style>
         {% set noscript_css %}{% include "assets/css/noscript.css" %}{% endset %}
         <noscript><style>{{ noscript_css | cssmin | safe }}</style></noscript>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Marcellus&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload-0 is-preload-1 is-preload-2">
 

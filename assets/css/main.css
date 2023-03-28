@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
 /*
 	Lens by HTML5 UP
 	html5up.net | @ajlkn
@@ -140,7 +137,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: 'Antic Slab', Helvetica, sans-serif;
 		font-weight: 400;
 		line-height: 1.65;
 		font-size: 1em;
@@ -936,7 +933,7 @@ input, select, textarea {
 		#header h2 {
 			font-size: 2.15em;
 			font-weight: 400;
-			font-family: 'Playfair Display', serif;
+			font-family: 'Marcellus', serif;
 		}
 
 		#header h1 {
@@ -944,7 +941,7 @@ input, select, textarea {
 		}
 
 		#header h2 {
-			font-size: 1.8em;
+			font-size: 1.4em;
 		}
 
 		#header p {
