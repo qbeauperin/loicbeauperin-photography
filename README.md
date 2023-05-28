@@ -11,7 +11,7 @@ npm install
 ## Run locally
 
 ```
-npx @11ty/eleventy --serve
+npm start
 ```
 
 ## Access the admin
