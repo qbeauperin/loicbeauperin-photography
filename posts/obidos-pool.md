@@ -1,6 +1,6 @@
 ---
 title: Obidos pool.
-image: assets/images/img_8117.jpg
+image: assets/images/img_8117-copie.jpg
 image_position:
   horizontal: center
   vertical: center
