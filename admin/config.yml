@@ -18,6 +18,7 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "ID", name: "id", widget: "uuid", allow_regenerate: false  }
       - label: "Photo"
         name: "image"
         widget: "image"
@@ -86,3 +87,22 @@ collections:
             widget: "list"
             fields:
               - { label: "Element", name: "entry", widget: "string" }
+      - label: "Photos"
+        name: "posts_settings"
+        file: "_data/order.json"
+        fields:
+          - 
+            label: "Order"
+            name: "ids"
+            widget: "list"
+            collapsed: false
+            label_singular: "a photo"
+            fields: 
+              -
+                label: "Photo"
+                name: "photo"
+                widget: "relation"
+                collection: "posts"
+                search_fields: ["title"]
+                display_fields: ["title"]
+                value_field: "id"

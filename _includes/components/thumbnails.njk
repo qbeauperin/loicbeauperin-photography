@@ -1,9 +1,13 @@
 <section id="thumbnails">
-    {% for post in collections.posts %}
-        <article>
-            {% thumbnail post.data.image, post.data.title, post.data.image_position %}
-            <h2>{{ post.data.title }}</h2>
-            <p>{{ post.templateContent | safe }}</p>
-        </article>
+    {% for post_id in order.ids %}
+        {% for post in collections.posts %}
+            {% if post.data.id == post_id %}
+                <article>
+                    {% thumbnail post.data.image, post.data.title, post.data.image_position %}
+                    <h2>{{ post.data.title }}</h2>
+                    <p>{{ post.templateContent | safe }}</p>
+                </article>
+            {% endif %}
+        {% endfor %}
     {% endfor %}
 </section>
