@@ -1,6 +1,6 @@
 ---
 title: Couleurs au vol.
-image: assets/images/img_7724.jpg
+image: assets/images/img_7724-copie.jpg
 image_position:
   horizontal: center
   vertical: center
