@@ -1,0 +1,74 @@
+---
+import settings from '../data/settings.json';
+---
+
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={settings.site_description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Admin | {settings.site_name}</title>
+	</head>
+	<body>
+    </body>
+</html>
+
+<script>
+    import CMS from "@staticcms/core"
+    import "@staticcms/core/dist/main.css"
+
+    CMS.init({
+        config: {
+            backend: {
+                // Use netlify identity as backend
+                name: "git-gateway",
+                branch: "main",
+            },
+            // Run "npx @staticcms/proxy-server" for local backend
+            local_backend: true,
+            slug: {
+                encoding: "ascii",
+                clean_accents: true,
+            },
+            media_folder: "/src/assets/photos",
+            collections: [
+                {
+                    label: "Photos",
+                    label_singular: "Photo",
+                    name: "posts",
+                    folder: "src/content/photos",
+                    create: true,
+                    editor: {
+                        preview: false,
+                    },
+                    fields: [
+                        { 
+                            name: "title",
+                            label: "Title",
+                            widget: "string",
+                        },
+                        { 
+                            name: "id",
+                            label: "ID",
+                            widget: "uuid",
+                            allow_regenerate: false,
+                        },
+                        {
+                            name: "image",
+                            label: "Photo",
+                            widget: "image",
+                            media_folder: "/src/assets/photos/",
+                            media_library: {
+                                max_file_size: 10000000,
+                            },
+                        },
+                    ]
+                },
+            ],
+        },
+    })
+</script>
+
+<!-- This div is here to solve an astro bug -->
+<div></div>
