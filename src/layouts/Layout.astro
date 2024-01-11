@@ -1,0 +1,32 @@
+---
+interface Props {
+	title?: string;
+}
+
+import settings from '../data/settings.json';
+
+const { title = '' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={settings.site_description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title + (title ? ' | ' : '') + settings.site_name}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #f1e1d7;
+	}
+</style>
