@@ -6,4 +6,5 @@ image_position:
   horizontal: center
   vertical: top
 ---
-Prints / Tirages : loicbeauperinphoto@gmail.com
+Contact : [loicbeauperinphoto@gmail.com](loicbeauperinphoto@gmail.com)
+
